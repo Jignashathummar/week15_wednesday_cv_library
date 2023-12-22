@@ -1,11 +1,11 @@
-package com.orangehrmlive.demo.utility;
+package uk.co.library.utility;
 
 import com.google.common.base.Function;
-import com.orangehrmlive.demo.browserfactory.ManageBrowser;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import uk.co.library.browserfactory.ManageBrowser;
 
 import java.io.File;
 import java.io.IOException;
@@ -368,5 +368,8 @@ public class Utility extends ManageBrowser {
             sb.append(AlphaNumericString.charAt(index));
         }
         return sb.toString();
+    }
+    public void switchToIframe(WebElement element){
+        driver.switchTo().frame(element);
     }
 }

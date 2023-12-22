@@ -1,9 +1,13 @@
+package uk.co.library.steps;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import uk.co.library.pages.HomePage;
+import uk.co.library.pages.ResultPage;
 
-public class JobsearchSteps {
+public class JobSearchSteps {
     @Given("When I am on homepage")
     public void whenIAmOnHomepage() {
     }
